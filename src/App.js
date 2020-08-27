@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HeroBanner from './components/HeroBanner';
 import EventCard from './EventCard';
 
 function App() {
@@ -62,7 +64,7 @@ function App() {
         {
             key: "colombia-recruiting-mission-2021",
             title: "<strong>Apply</strong> now to the Colombia Recruiting Mission.",
-            media: '<iframe width=\"515\" height=\"290\" src=\"https://www.youtube.com/embed/oYI3qbb6eJs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>',
+            media: '<iframe width="515" height="290" src="https://www.youtube.com/embed/oYI3qbb6eJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
             description: "Get interview for top-tech companies from Canada and Europe and be ready to relocate. A weekend long hackathon and recruiting fair to find your company best match. If you are a senior talent do not hesitate on participate.",
             type: "Recruiting Mission",
             date: "Sat, August 22 // 2020",
@@ -93,40 +95,23 @@ function App() {
             attendees: 78,
         },
     ];
-  return(
-      <header>
-          <div className="main-container">
-            <div className="header__options">
-                <div className="header__logo">
-                    <img src="https://vanhack.com/platform/7fefa6b1dc9802203f976c49b68a47bf.svg" alt="Vanhack Logo" />
-                </div>
-                <nav>
-                    <a href="">Find a Job</a>
-                    <a href="" className="active details-link">Events</a>
-                    <a href="">Premium</a>
-                    <a href="">Blog</a>
-                </nav>
-                <EventCard eventType="Open webinar" />
-                <EventCard eventType="Open webinar" />
-                <EventCard eventType="Open webinar" />
-                <EventCard eventType="Open webinar" />
+      return(
+          <div className="App">
+              <Header/>
+              <HeroBanner/>
                 <div className="events-container">
-        {
-            MOCK_EVENTS.map(event => {
-                return <EventCard
-                eventType={event.type}
-                eventDate={event.date}
-                eventTitle={event.title}
-                />
-            })
-        }
+                    {
+                        MOCK_EVENTS.map(event => {
+                            return <EventCard
+                                eventType={event.type}
+                                eventDate={event.date}
+                                eventTitle={event.title}
+                            />
+                        })
+                    }
                 </div>
-            </div>
-            <div className="header__user-account">
-                <a href=""><img src="https://vanhackblobstorageprod.blob.core.windows.net/img/User/20e9a5ac-9761-4d8e-a5de-a31a31056857.jpg" alt="user-avatar"/></a>
-            </div>
-            </div>
-        </header>
+              <Footer/>
+      </div>
   );
 }
 

@@ -3,22 +3,24 @@ import React from 'react';
 
 const EventCard = (props) => {
     return(
-        <div class="event__media">event.media</div>
-        <div class="event__info">
-            <span class="event__type">{props.eventType}</span>
-            <span class="event__date">'+event.date+'</span>
-            <h2 class="event__title">'+event.title+'</h2>
-            <span class="event__description">'+event.description+'</span>\n'+
-            <span class="event__location"><i class="fas fa-map-marker-alt"></i>'+event.location+'</span>
-
-            <div class="event__options">
-                <span class="event__deadline"><b>Deadline: </b>'+event.deadline+'</span>
-                <span class="event__attendees"><i class="fas fa-map-marker-alt"></i>'+event.attendees+' people attending</span>
-                <button class="secondary-button details-link">Learn More</button>
-                <button class="primary-button" data-event-status="available">Apply</button>
+        <div className="event">
+            <div className="event__media">event.media</div>
+            <div className="event__info">
+                <span className="event__type">{props.eventType}</span>
+                <span className="event__date">{props.eventDate}</span>
+                <h2 className="event__title">{props.eventTitle}</h2>
+                <span className="event__description">{props.eventDescription}</span>
+                <span className="event__location"><i className="fas fa-map-marker-alt"></i>{props.eventLocation}</span>
+    
+                <div className="event__options">
+                    <span className="event__deadline"><b>Deadline: </b>{props.eventDeadline}</span>
+                    <span className="event__attendees"><i className="fas fa-map-marker-alt"></i>{props.eventAttendees} people attending</span>
+                    <button className="secondary-button details-link">Learn More</button>
+                    <button className="primary-button" data-event-status="available">Apply</button>
+                </div>
             </div>
         </div>
     );
 }
 
-export default EventCard
+export default EventCard;
