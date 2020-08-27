@@ -4,7 +4,7 @@ import React from 'react';
 const EventCard = (props) => {
     return(
         <div className="event">
-            <div className="event__media">event.media</div>
+            <div className="event__media">{props.eventMedia}</div>
             <div className="event__info">
                 <span className="event__type">{props.eventType}</span>
                 <span className="event__date">{props.eventDate}</span>
