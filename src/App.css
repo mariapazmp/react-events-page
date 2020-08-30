@@ -567,10 +567,6 @@ h1 strong, .starred-event:first-child strong {
    Page States
    ========================================================================== */
 
-#event-details {
-  display: none;
-}
-
 .warning-modal {
   display: none;
 }

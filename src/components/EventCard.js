@@ -1,10 +1,12 @@
 import React from 'react';
-
+import {
+    Link
+} from "react-router-dom";
 
 const EventCard = (props) => {
     return(
         <div className="event">
-            <div className="event__media">{props.eventMedia}</div>
+            <div className="event__media"><Link to={`/event-${props.eventKey}`}>{props.eventMedia}</Link></div>
             <div className="event__info">
                 <span className="event__type">{props.eventType}</span>
                 <span className="event__date">{props.eventDate}</span>
