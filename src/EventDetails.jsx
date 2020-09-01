@@ -5,6 +5,7 @@ import {
 
 function EventDetails () {
     let { eventKey } = useParams();
+
     return (
         <main id="event-details" className="event" data-key="">
             <section className="main-container">
