@@ -99,3 +99,9 @@ export const eventData = [
         attendees: 78,
     },
 ];
+
+export let userData = {
+    name: "Maria Paz Muñoz",
+    appliedEvents: ["women-mission-2020"],
+    subscriptionType: "regular"
+};

@@ -6,7 +6,7 @@ function Header() {
             <div className="main-container">
                 <div className="header__options">
                     <div className="header__logo">
-                        <img src="https://vanhack.com/platform/7fefa6b1dc9802203f976c49b68a47bf.svg" alt="Vanhack Logo" />
+                        <a href="/"><img src="https://vanhack.com/platform/7fefa6b1dc9802203f976c49b68a47bf.svg" alt="Vanhack Logo" /></a>
                     </div>
                     <nav>
                         <a href="">Find a Job</a>

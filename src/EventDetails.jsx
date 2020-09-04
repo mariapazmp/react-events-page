@@ -2,28 +2,27 @@ import React from 'react'
 import {
     useParams
 } from "react-router-dom";
+import GetEventInfo from "./utils/getEventInfo";
 
 function EventDetails () {
     let { eventKey } = useParams();
+    const event = GetEventInfo(eventKey);
 
     return (
         <main id="event-details" className="event" data-key="">
             <section className="main-container">
                 <ul className="breadcrumbs">
-                    <li className="breadcrumbs__item"><a href="" className="details-link">Vanhack Events</a></li>
-                    <li className="breadcrumbs__item breadcrumbs__item--current">{eventKey}</li>
+                    <li className="breadcrumbs__item"><a href="/" className="details-link">Vanhack Events</a></li>
+                    <li className="breadcrumbs__item breadcrumbs__item--current">{event.title}</li>
                 </ul>
 
-                <h2 className="event-details__title event__title">{eventKey}</h2>
-                <div className="event-details__date"></div>
+                <h2 className="event-details__title event__title">{event.title}</h2>
+                <div className="event-details__date">{event.date}</div>
                 <button className="primary-button" data-event-status="">Apply Now</button>
 
                 <div className="event-details__body">
                     <article>
-                        <div className="event-details__featured-image">
-                            <img src="https://raw.githubusercontent.com/mariapazmp/events-page/master/img/event-1.png"
-                                 alt="Illustration of a group of women of various physical characteristics and fashion styles"/>
-                        </div>
+                        <div className="event-details__featured-image">{event.media}</div>
                         <div className="event-details__article-body">
                             <p>VanHack is hosting our first <strong>Virtual Hiring Event for Women the week of September
                                 21st.</strong> If you are a woman developer and are looking for a job abroad you should
@@ -77,10 +76,9 @@ function EventDetails () {
                     </article>
                     <aside>
                         <div className="event-details__options">
-                            <div className="event-details__date"><i className="far fa-calendar-alt"></i><span></span>
-                            </div>
-                            <div className="event-details__event-type"></div>
-                            <div className="event-details__location"><i className="fas fa-map-marker-alt"></i><span>Online Event</span>
+                            <div className="event-details__date"><i className="far fa-calendar-alt"></i><span>{event.date}</span></div>
+                            <div className="event-details__event-type">{event.type}</div>
+                            <div className="event-details__location"><i className="fas fa-map-marker-alt"></i><span>{event.location}</span>
                             </div>
 
                             <button className="primary-button" data-event-status="">Apply Now</button>

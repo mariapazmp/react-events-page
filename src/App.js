@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { eventData } from "./data";
+import { eventData, userData } from "./data";
 import {
     BrowserRouter as Router,
     Switch,
@@ -12,11 +12,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-    let MOCK_USER = {
-        name: "Maria Paz Muñoz",
-        appliedEvents: ["women-mission-2020"],
-        subscriptionType: "regular"
-    };
 
     function disableButtons(eventNode) {
         const applyButtons = eventNode.querySelectorAll(".primary-button");
@@ -33,7 +28,7 @@ function App() {
     }
 
     function hasApplied(eventKey) {
-        if(MOCK_USER.appliedEvents.indexOf(eventKey) > -1) {
+        if(userData.appliedEvents.indexOf(eventKey) > -1) {
             return true;
         }
     }
