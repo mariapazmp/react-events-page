@@ -2,17 +2,9 @@ import React from 'react';
 import {
     Link
 } from "react-router-dom";
+import ApplyOptions from "../utils/ApplyOptions";
 
 const EventCard = (props) => {
-    function setEventDetails(eventKey) {
-
-        /*if (hasApplied(eventKey)) {
-            disableButtons(document.querySelector("#event-details"));
-        }
-
-        setSocialSharingLinks(event.title);*/
-    }
-
     return(
         <div className="event">
             <div className="event__media"><Link to={`/event-${props.eventKey}`}>{props.eventMedia}</Link></div>
@@ -27,7 +19,7 @@ const EventCard = (props) => {
                     <span className="event__deadline"><b>Deadline: </b>{props.eventDeadline}</span>
                     <span className="event__attendees"><i className="fas fa-map-marker-alt"></i>{props.eventAttendees} people attending</span>
                     <button className="secondary-button details-link">Learn More</button>
-                    <button className="primary-button" data-event-status="available">Apply</button>
+                    <ApplyOptions eventKey={props.eventKey}/>
                 </div>
             </div>
         </div>

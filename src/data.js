@@ -102,6 +102,6 @@ export const eventData = [
 
 export let userData = {
     name: "Maria Paz Muñoz",
-    appliedEvents: ["women-mission-2020"],
+    appliedEvents: ["ruth-hired-canada", "interview-practice-august"],
     subscriptionType: "regular"
 };

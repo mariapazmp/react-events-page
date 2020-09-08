@@ -3,10 +3,20 @@ import {
     useParams
 } from "react-router-dom";
 import GetEventInfo from "./utils/getEventInfo";
+import ApplyOptions from "./utils/ApplyOptions";
 
 function EventDetails () {
     let { eventKey } = useParams();
     const event = GetEventInfo(eventKey);
+
+    function setEventDetails(eventKey) {
+
+        /*if (hasApplied(eventKey)) {
+            disableButtons(document.querySelector("#event-details"));
+        }
+
+        setSocialSharingLinks(event.title);*/
+    }
 
     return (
         <main id="event-details" className="event" data-key="">
@@ -18,7 +28,7 @@ function EventDetails () {
 
                 <h2 className="event-details__title event__title">{event.title}</h2>
                 <div className="event-details__date">{event.date}</div>
-                <button className="primary-button" data-event-status="">Apply Now</button>
+                <ApplyOptions eventKey={event.key}/>
 
                 <div className="event-details__body">
                     <article>
@@ -81,7 +91,7 @@ function EventDetails () {
                             <div className="event-details__location"><i className="fas fa-map-marker-alt"></i><span>{event.location}</span>
                             </div>
 
-                            <button className="primary-button" data-event-status="">Apply Now</button>
+                            <ApplyOptions eventKey={event.key}/>
                             <div className="social-media-sharing">
                                 <h4>Share it with your friends!</h4>
                                 <ul>
