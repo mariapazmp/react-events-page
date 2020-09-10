@@ -4,7 +4,7 @@ export const eventData = [
     {
         key: "ruth-hired-canada",
         title: "How Ruth got hired and relocated to Canada. Success Cases of Vanhack.",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://vanhackblobstorageprod.blob.core.windows.net/img/events/thumbnail/06da3742-d896-4573-87f9-9fccb92f341a.jpg'/>,
         type: "Premium Webinar",
         date: "Sat, August 22 // 2020",
@@ -14,7 +14,7 @@ export const eventData = [
     {
         key: "women-mission-2020",
         title: "Virtual Hiring Event for Women. Canada and Europe 2020",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://raw.githubusercontent.com/mariapazmp/events-page/master/img/event-1.png'/>,
         type: "Open Webinar",
         date: "Mon, September 21 // 2020",
@@ -24,7 +24,7 @@ export const eventData = [
     {
         key: "interview-practice-august",
         title: "Interview-practice class OPEN HOUSE August",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://raw.githubusercontent.com/mariapazmp/events-page/master/img/event-2.png'/>,
         type: "Meetup",
         date: "Mon, August 10 // 2020",
@@ -34,7 +34,7 @@ export const eventData = [
     {
         key: "interview-practice-august",
         title: "How Ruth got hired and relocated to Canada. Success Cases of Vanhack.",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://raw.githubusercontent.com/mariapazmp/events-page/master/img/event-1.png'/>,
         type: "Open Webinar",
         date: "Sat, August 22 // 2020",
@@ -44,7 +44,7 @@ export const eventData = [
     {
         key: "acing-code-interview",
         title: "Acing the Code Interview with Tam KBeili",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://raw.githubusercontent.com/mariapazmp/events-page/master/img/event-3.png'/>,
         type: "Premium Webinar",
         date: "Fri, August 7 // 2020",
@@ -54,7 +54,7 @@ export const eventData = [
     {
         key: "career-front-dev",
         title: "A Successful Career As a Front-end Developer in Europe",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://vanhackblobstorageprod.blob.core.windows.net/img/events/thumbnail/7e38624b-ba79-4e1d-9817-d4209edbb685.jpg'/>,
         type: "Meetup",
         date: "Sat, August 22 // 2020",
@@ -77,7 +77,7 @@ export const eventData = [
     {
         key: "leap-montreal-2021",
         title: <span>Vanhack <strong>Leap </strong>Montreal 2021 is on the way.</span>,
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://vanhackblobstorageprod.blob.core.windows.net/img/events/thumbnail/06da3742-d896-4573-87f9-9fccb92f341a.jpg'/>,
         description: "Get interview for top-tech companies from Canada and Europe and be ready to relocate. A weekend long hackathon and recruiting fair to find your company best match. If you are a senior talent do not hesitate on participate.",
         type: "Leap",
@@ -89,7 +89,7 @@ export const eventData = [
     {
         key: "colombia-vanhackathon-2020",
         title: "Start your engines for the Online Vanhackathon",
-        media: <img class='details-link'
+        media: <img className='details-link'
                     src='https://vanhackblobstorageprod.blob.core.windows.net/img/events/thumbnail/06da3742-d896-4573-87f9-9fccb92f341a.jpg'/>,
         description: "Get interview for top-tech companies from Canada and Europe and be ready to relocate. A weekend long hackathon and recruiting fair to find your company best match. If you are a senior talent do not hesitate on participate.",
         type: "Vanhackathon",
